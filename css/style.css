@@ -84,6 +84,263 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.content-wrapper {
+  width: 90%;
+  border: 3px dotted red;
+}
+/* header and footer styles */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 100%;
+  border: 3px dotted red;
+}
+
+header nav {
+  width: 60%;
+  border: 3px dotted blue;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0px 20px 0px;
+  border: 3px dotted blue;
+}
+
+header figure {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  /* height: ; */
+  margin: 0px;
+  border: 3px dotted blue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  /* border: 3px dotted blue; */
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-content {
+  padding: 50px 0px;
+}
+
+footer .copyright {
+  padding: 20px 0px;
+}
+
+footer h4 {
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+footer address {
+  padding-bottom: 50px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+
+/* home page main */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.newsletter h3 {
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+.form-description p {
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
+.newsletter .form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form input {
+  width: 100%;
+}
+
+.form .email {
+  padding: 1em;
+  margin-bottom: 20px;
+}
+
+.form .download {
+  padding: 20px 0px;
+  margin-top: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.parent-container-features-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.features article {
+  width: 60%;
+  padding: 30px 0px;
+}
+
+.features h2 {
+  padding-bottom: 60px;
+  margin: 0px;
+}
+
+.features .fontawesome-icon {
+  padding-bottom: 40px;
+  margin: 0px;
+}
+
+.features .features-item-description {
+  margin: 0px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.reviews figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  border: 3px dotted blue;
+}
+
+.reviews img {
+  width: 100%;
+}
+
+.reviews h3 {
+  padding: 20px 0px;
+  margin: 0px;
+  /* width: 50%;  why do this*/
+}  
+
+.reviews h2 {
+  padding-bottom: 40px;
+  margin: 0px;
+}
+
+.reviews p {
+  margin: 0px;
+}
+
+/* about page main */
+
+.mission {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+/* faq page main */
+
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  padding: 50px 0px 0px 0px;
+}
+.faq h2 {
+  padding-bottom: 40px;
+}
+
+.faq .questions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* might need the justify content and align items here */
+}
+.faq-content {
+  padding-bottom: 50px;
+  width: 100%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -167,14 +424,138 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* tablet styles here */
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  /* header styles */
+  header figure {
+    width: 30%;
+  }
+  header nav {
+    width: 30%;
+  }
+  .header-divider {
+    width: 30%;
+    margin: 0px;
+  }
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  /* homepage styles */
+  .hero-area {
+    padding: 100px 0px;
+  }
+  .newsletter .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-description {
+    width: 40%;
+  }
+  .form {
+    width: 40%;
+  }
+  .features {
+    padding: 100px 0px;
+  }
+  .features h2 {
+    padding-bottom: 20px;
+  }
+  .parent-container-features-items {
+    justify-content: space-evenly;
+    column-gap: 20%;
+  }
+  .features article {
+    width: 30%;
+  }
+  .features .fontawesome-icon {
+    padding-bottom: 30px;
+  }
+  .reviews {
+    padding: 100px 0px;
+  }
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .reviews figure {
+    width: 48%;
+  }
+  .reviews .team-review {
+    width: 48%;
+  }
+  .reviews h3 {
+    padding-top: 0%;
+  }
+  footer .footer-content {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  footer .footer-contact {
+    width: 30%;
+  }
+  footer .footer-social {
+    width: 30%;
+  }
+  footer h4 {
+    padding-bottom: 40px;
+  }
+
+  /* about page styles */
+  .mission {
+    padding: 100px 0px;
+  }
+  .mission .mission-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mission .mission-content p {
+    width: 45%;
+    margin: 0px;
+    padding-top: 20px;
+  }
+  .contact {
+    padding: 100px 0px;
+  }
+  .contact .contact-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact .contact-address {
+    width: 45%;
+  }
+  .contact .contact-facilitator {
+    width: 45%;
+  }
+
+  /* faq styles */
+  .faq-content {
+    width: 45%;
+  }
+  .faq .questions {
+    justify-content: space-between;
+  }
+  /* faq h2 width 100%? mobile too? margin 0px? */
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* desktop styles here */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -185,6 +566,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -244,4 +626,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
