@@ -430,7 +430,7 @@ footer p {
     max-width: 640px;
   }
 
-  /* header styles */
+  /* header/footer styles */
   header figure {
     width: 30%;
   }
@@ -444,6 +444,26 @@ footer p {
   header .content-wrapper {
     justify-content: space-between;
   }
+  footer .content-wrapper {
+    width: 100%;
+  }
+  footer .footer-content {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    /* maybe space evenly here and space between for desktop? */
+    width: 100%;
+  }
+  footer .footer-contact {
+    width: 30%;
+  }
+  footer .footer-social {
+    width: 30%;
+  }
+  footer h4 {
+    padding-bottom: 40px;
+  }
+
 
   /* homepage styles */
   .hero-area {
@@ -492,22 +512,7 @@ footer p {
   .reviews h3 {
     padding-top: 0%;
   }
-  footer .footer-content {
-    padding: 100px 0px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  footer .footer-contact {
-    width: 30%;
-  }
-  footer .footer-social {
-    width: 30%;
-  }
-  footer h4 {
-    padding-bottom: 40px;
-  }
-
+  
   /* about page styles */
   .mission {
     padding: 100px 0px;
@@ -543,14 +548,58 @@ footer p {
     justify-content: space-between;
   }
   /* faq h2 width 100%? mobile too? margin 0px? */
-
-
-
 }
 
 @media only screen and (min-width: 1200px) {
   /* desktop styles here */
-}
+  .content-wrapper {
+    max-width: 960px;
+  }
+  /* header/footer styles */
+  
+  
+  /* main page styles */
+  
+  /*.hero-area h1 {
+    width: ; 
+  }*/
+  .newsletter .content-wrapper {
+    justify-content: space-evenly;
+  }
+  .form-description {
+    width: 30%;
+  }
+  .form {
+    width: 30%;
+  }
+  /*.features h2 {
+    width: ;
+  }*/
+  .parent-container-features-items {
+    column-gap: 10%;
+  }
+  .features article {
+    width: 20%;
+  }
+  .reviews .team-review {
+    width: 42%;
+  }
+
+  
+  /* about page styles */
+  /*.mission h2, .conmtact-section .content-wrapper h2 {
+    width: ;
+  }
+  */
+
+  /* faq page styles */
+ /* .faq h2 {
+    width: 100%;
+  }
+  */
+
+
+  
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
