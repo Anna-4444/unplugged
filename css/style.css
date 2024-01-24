@@ -244,11 +244,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
 }
 
 footer .social-icons a {
   font-size: 1.3125em;
   color: #e2e3ed;
+  padding: .5em;
 }
 
 footer .copyright {
