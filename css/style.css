@@ -84,7 +84,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* general styles */
+/**** GENERAL STYLES ****/
 
 html {
   font-size: 16px;
@@ -94,31 +94,29 @@ body {
   font-family: "open sans", sans-serif;
   font-size: 1em;
   color: #e2e3ed;
+  margin: 0px;
 }
 
 ul,
 ol {
   font-size: 1.125em;
   font-weight: bold;
-}
-
-a {
-  /* text-decoration: none; */
-  /* color: #e2e3ed; */
-  /* do i need to repeat color, already did text-decoration in nav and color/size in footer icons */
+  text-transform: uppercase;
 }
 
 h1 {
   font-family: poppins, helvetica, arial, sans-serif;
   font-size: 2.25em;
   font-weight: 500;
-  line-height: 2.6875em;
+  line-height: 1.2;
+  margin: 0px;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0px;
 }
 
 h3,
@@ -130,25 +128,14 @@ h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 1.125em;
-}
-
-
-
-img {}
-
-figure {}
-
-address {
-  /* did this in footer address */
+  line-height: 1.3;
 }
 
 .content-wrapper {
   width: 90%;
-  border: 3px dotted red;
 }
 
-/* header and footer styles */
+/**** HEADER AND FOOTER STYLES ****/
 
 header {
   display: flex;
@@ -168,14 +155,11 @@ header figure {
   display: flex;
   justify-content: center;
   width: 60%;
-  /* height: ; */
   margin: 0px;
-  border: 3px dotted blue;
 }
 
 header img {
   width: 100%;
-  border: 3px dotted red;
 }
 
 .header-divider {
@@ -183,12 +167,10 @@ header img {
   height: 1px;
   margin: 10px 0px 20px 0px;
   background-color: #3a3a3a;
-  border: 3px dotted blue;
 }
 
 header nav {
   width: 60%;
-  border: 3px dotted blue;
 }
 
 header nav ul {
@@ -217,11 +199,11 @@ footer .content-wrapper {
   align-items: center;
   text-align: center;
   width: 60%;
-  /* border: 3px dotted blue; */
 }
 
 footer .footer-content {
   padding: 50px 0px;
+  width: 100%;
 }
 
 footer h4 {
@@ -246,6 +228,8 @@ footer .social-icons p {
   align-items: center;
   background-color: #527158;
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 footer .social-icons a {
@@ -263,7 +247,9 @@ footer p {
 }
 
 
-/* home page main */
+/**** HOME PAGE STYLES Mobile ****/
+
+/* HERO AREA  */
 
 .hero-area {
   display: flex;
@@ -274,6 +260,7 @@ footer p {
   background-size: cover;
   height: 500px;
 }
+/* ASIDE  */
 
 .newsletter {
   display: flex;
@@ -306,7 +293,7 @@ input {
 
 input[type=text] {
   padding: 1em;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-style: italic;
   color: #2a423a;
 }
@@ -319,13 +306,13 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-
+/* FEATURES  */
 
 .features {
   display: flex;
   justify-content: center;
   padding: 50px 0px;
-  background: url(../img/unplugged-retreat-features.jpg);
+  background: url('../img/unplugged-retreat-features.jpg') no-repeat #202322;
   background-position: center;
   background-size: cover;
 }
@@ -343,7 +330,7 @@ input[type=button] {
 }
 
 .features article {
-  width: 60%;
+  width: 64%;
   padding: 30px 0px;
 }
 
@@ -359,6 +346,8 @@ input[type=button] {
   text-align: center;
 }
 
+/* REVIEWS  */
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -369,7 +358,7 @@ input[type=button] {
 .reviews h2 {
   padding-bottom: 40px;
   margin: 0px;
-  line-height: 1.875em;
+  line-height: 1;
 }
 
 .reviews figure {
@@ -377,7 +366,7 @@ input[type=button] {
   display: flex;
   justify-content: center;
   margin: 0px;
-  border: 3px dotted blue;
+  /* border: 3px dotted blue; */
 }
 
 .reviews img {
@@ -394,18 +383,15 @@ input[type=button] {
   margin: 0px;
 }
 
-/* about page main */
+/*=================
+ABOUT PAGE STYLES
+===================*/
 
 .mission {
   display: flex;
   justify-content: center;
   padding: 50px 0px;
   background-color: #527158;
-}
-
-.map {
-  display: flex;
-  justify-content: center;
 }
 
 .map figure {
@@ -432,7 +418,16 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-/* faq page main */
+.contact address {
+  font-style: normal;
+}
+.contact-content p {
+  margin: 0px;
+}
+
+/*==================
+FAQ PAGE STYLES
+====================*/
 
 .faq {
   display: flex;
@@ -443,21 +438,18 @@ input[type=button] {
 .faq .content-wrapper {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
   padding: 50px 0px 0px 0px;
 }
 
 .faq h2 {
   padding-bottom: 40px;
-  line-height: 1.875em;
+  line-height: 1;
 }
 
 .faq .questions {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  /* might need the justify content and align items here */
 }
 
 .faq-content {
@@ -466,7 +458,7 @@ input[type=button] {
 }
 
 .faq-content h4 {
-  line-height: 1.5em;
+  line-height: 1.3;
 }
 
 /* ==========================================================================
@@ -554,7 +546,7 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
 
-  /* tablet styles here */
+  /**** TABLET STYLES HERE ****/
 
   .content-wrapper {
     max-width: 640px;
@@ -562,17 +554,18 @@ input[type=button] {
 
   h1 {
     font-size: 3em;
-    line-height: 3em;
+    line-height: 1;
+    margin: 0px;
   }
 
   h2 {
     font-size: 2.25em;
-    line-height: 3em;
+    line-height: 1.3;
   }
 
   h3 {
     font-size: 1.5em;
-    line-height: 1.875em;
+    line-height: 1.25;
   }
 
   h4 {
@@ -580,18 +573,22 @@ input[type=button] {
   }
 
   footer p {
-    line-height: 1.125em;
+    line-height: 1.3;
   }
 
   .faq h4,
   .faq p {
     font-size: .875em;
-    line-height: .984em;
+    line-height: 1.1;
   }
 
 
 
-  /* header/footer styles */
+  /*** HEADER/FOOTER STYLES TABLET */
+
+  header {
+    padding: 33px 0px;
+  }
 
   header .content-wrapper {
     justify-content: space-between;
@@ -602,12 +599,11 @@ input[type=button] {
   }
 
   .header-divider {
-    width: 30%;
-    margin: 0px;
+    display: none;
   }
 
   header nav {
-    width: 30%;
+    width: 20%;
   }
 
   footer .content-wrapper {
@@ -618,12 +614,15 @@ input[type=button] {
     padding: 100px 0px;
     display: flex;
     justify-content: space-between;
-    /* maybe space evenly here and space between for desktop? */
     width: 100%;
   }
 
   footer .footer-contact {
     width: 30%;
+  }
+
+  footer address {
+    padding: 0px;
   }
 
   footer .footer-social {
@@ -634,11 +633,15 @@ input[type=button] {
     padding-bottom: 40px;
   }
 
-  /* homepage styles */
+  /**** HOME PAGE STYLES TABLET */
+
+  /* Hero Area  */
 
   .hero-area {
     padding: 100px 0px;
   }
+
+  /* Aside */
 
   .newsletter .content-wrapper {
     display: flex;
@@ -652,6 +655,8 @@ input[type=button] {
   .newsletter .form {
     width: 40%;
   }
+
+  /* Features */
 
   .features {
     padding: 100px 0px;
@@ -667,15 +672,21 @@ input[type=button] {
   }
 
   .features article {
-    width: 30%;
+    width: 31%;
   }
 
   .features .fontawesome-icon {
     padding-bottom: 30px;
   }
 
+  /* Reviews */
+
   .reviews {
     padding: 100px 0px;
+  }
+
+  .reviews h2 {
+    width: 85%;
   }
 
   .reviews article {
@@ -696,7 +707,7 @@ input[type=button] {
     padding-top: 0%;
   }
 
-  /* about page styles */
+  /**** ABOUT PAGE STYLES TABLET ****/
 
   .mission {
     padding: 100px 0px;
@@ -717,21 +728,18 @@ input[type=button] {
   .map {
     height: 350px;
   }
-  .map figure {
-    padding-bottom: 58%;
-    overflow: hidden;
-  }
   */
+
   .map figure {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
+    padding-bottom: 45.5%;
   }
 
   .contact {
     padding: 100px 0px;
+  }
+
+  .contact h2 {
+    width: 80%;
   }
 
   .contact .contact-content {
@@ -747,7 +755,7 @@ input[type=button] {
     width: 45%;
   }
 
-  /* faq styles */
+  /* FAQ PAGE STYLES TABLET */
 
   .faq-content {
     width: 45%;
@@ -757,12 +765,11 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  /* faq h2 width 100%? mobile too? margin 0px? */
 }
 
 @media only screen and (min-width: 1200px) {
 
-  /* desktop styles here */
+  /**** DESKTOP STYLES HERE */
 
   .content-wrapper {
     max-width: 960px;
@@ -770,10 +777,15 @@ input[type=button] {
 
   h1 {
     font-size: 3.75em;
+    width: 70%;
   }
 
   h2 {
     font-size: 2.25em;
+  }
+
+  .reviews h2 {
+    padding-bottom: 50px;
   }
 
   .faq h2,
@@ -788,25 +800,37 @@ input[type=button] {
 
   .faq h4 {
     font-size: 1.125em;
-    line-height: 1.125em;
+    line-height: 1;
+  }
+
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 
   p {
     font-size: 1.125em;
-    line-height: 1.5em;
+    line-height: 1.3;
   }
 
 
 
-  /* header/footer styles */
+  /**** HEADER/FOOTER STYLES DESKTOP ****/
 
-  /* main page styles */
+  header {
+    padding: 15px 0px;
+  }
 
-  /*.hero-area h1 {
-    width: ; 
-  }*/
+  footer .footer-content {
+    justify-content: space-between;
+  }
+
+  /**** MAIN PAGE STYLES DESKTOP ****/
+
+  /* Aside */
+
   .newsletter .content-wrapper {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .newsletter .form-description {
@@ -817,9 +841,8 @@ input[type=button] {
     width: 30%;
   }
 
-  /*.features h2 {
-    width: ;
-  }*/
+  /* Features */
+
   .features .parent-container-features-items {
     column-gap: 10%;
   }
@@ -828,33 +851,32 @@ input[type=button] {
     width: 20%;
   }
 
+  /* Reviews */
+  
   .reviews .team-review {
     width: 42%;
   }
 
-  /* about page styles */
+  /* ABOUT PAGE STYLES DESKTOP */
 
-  /*.mission h2, .conmtact-section .content-wrapper h2 {
-    width: ;
+  .mission h2 {
+    width: 95%;
   }
-  */
 
   /*
   .map {
     height: 450px;
   }
+  */
 
   .map figure {
-    padding-bottom: 75%;
+    padding-bottom: 37.5%;
   }
-  */
+  
 
-  /* faq page styles */
+  /* FAQ PAGE STYLES DESKTOP */
 
-  /* .faq h2 {
-    width: 100%;
-  }
-  */
+  
 
   @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
